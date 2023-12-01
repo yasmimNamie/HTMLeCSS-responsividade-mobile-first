@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraBooks</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"&gt;
-    <link rel="preconnect" href="https://fonts.gstatic.com&quot; crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap&quot; rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css&quot; />
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap&quot; rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -21,7 +21,10 @@
             <label for="menu" class="container__rotulo">
                 <span class="cabeçalho__menu-hamburguer container__imagem"></span>
             </label>
-                <a href="#" class="lista-menu__link">Programação</a>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
                 </li>
                 <li class="lista-menu__item">
                     <a href="#" class="lista-menu__link">Front-end</a>
@@ -34,10 +37,7 @@
                 </li>
                 <li class="lista-menu__item">
                     <a href="#" class="lista-menu__link">Design & UX</a>
-                </li><ul class="lista-menu">
-                <li class="lista-menu__titulo">Categorias</li>
-                <li class="lista-menu__item">
-               
+                </li>
             </ul>
             <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
             <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
@@ -45,7 +45,7 @@
 
         <ul class="opções">
             <input type="checkbox" id="opções-menu" class="opções__botão">
-            <label for="opções-menu" class="opções__rotulo">
+            <label for="opções-menu" class="opções__rotulo"
                 <li class="opções__item">Categorias</li>
             </label>
 
@@ -319,7 +319,7 @@
         </ul>
     </footer>
 
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script&gt;
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
             spaceBetween: 10,
